@@ -1,0 +1,106 @@
+/* ================= ROOT WARNA ================= */
+:root {
+  --primary: #B8860B;
+  --secondary: #2A9D8F;
+  --accent: #E9C46A;
+  --bg: #FDFBF7;
+  --card: #FFFFFF;
+  --text: #333;
+}
+
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: var(--card);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+/* ================= CARD ================= */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  flex: 1;
+  border-radius: 10px;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  padding: 10px 20px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* ================= TEAM ================= */
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width:768px){
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+}
