@@ -1,125 +1,389 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jejak Hijrah</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JEJAK HIJRAH</title>
 
+  <!-- Menghubungkan file CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<header>
-  <nav class="navbar">
-    <div class="logo">JEJAK HIJRAH</div>
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">JEJAK HIJRAH</h1>
 
-    <div class="menu-toggle" id="menu-toggle">☰</div>
+      <!-- Tombol hamburger mobile -->
+      <button class="hamburger" id="hamburger">
+        ☰
+      </button>
 
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#hero">Beranda</a></li>
-      <li><a href="#masalah">Masalah</a></li>
-      <li><a href="#solusi">Solusi</a></li>
-      <li><a href="#fitur">Fitur</a></li>
-      <li><a href="#akses">Akses</a></li>
-      <li><a href="#tim">Tim</a></li>
-    </ul>
-  </nav>
-</header>
+      <!-- Menu navbar -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero">Beranda</a>
+        <a href="#masalah">Masalah</a>
+        <a href="#solusi">Solusi</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#akses">Akses</a>
+        <a href="#tim">Tim</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- ================= HERO ================= -->
-<section id="hero" class="hero">
-  <div class="hero-text">
-    <h1>JEJAK HIJRAH</h1>
-    <p>Menyusuri Jejak Hijrah Nabi Muhammad ke Madinah</p>
-    <p>Jejak Hijrah adalah aplikasi pembelajaran interaktif Sirah Nabawiyah berbasis Journey Map sederhana.</p>
-    <a href="#akses" class="btn">Mulai Sekarang</a>
-  </div>
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+  <section class="hero section" id="hero">
+    <div class="container hero-content">
 
-  <div class="hero-img">
-    <img src="https://i.ibb.co.com/4nwXHkDb" alt="FOTO HERO" onerror="this.onerror=null;this.src='';this.alt='Gambar belum ditambahkan';">
-  </div>
-</section>
+      <!-- Kolom kiri -->
+      <div class="hero-text reveal">
+        <span class="badge">Aplikasi Pembelajaran Interaktif</span>
 
-<!-- ================= MASALAH ================= -->
-<section id="masalah" class="section">
-  <h2>Mengapa Belajar Sejarah Terasa Membosankan?</h2>
-  <p>Pembelajaran Sirah Nabawiyah di sekolah seringkali menghadapi tantangan konvensional.</p>
+        <h2>
+          Menyusuri Jejak Hijrah Nabi Muhammad ke Madinah
+        </h2>
 
-  <div class="card-container">
-    <div class="card">Metode pasif yang hanya mengandalkan hafalan dari buku teks panjang.</div>
-    <div class="card">Siswa sulit fokus dan mengingat alur kronologis.</div>
-    <div class="card">Minimnya aplikasi edukasi yang ringan dan interaktif.</div>
-  </div>
-</section>
+        <p>
+          Jejak Hijrah adalah aplikasi pembelajaran interaktif
+          Sirah Nabawiyah berbasis Journey Map sederhana yang
+          dirancang khusus untuk siswa SMP. Mengubah teks sejarah
+          yang membosankan menjadi petualangan multimedia yang seru.
+        </p>
 
-<!-- ================= SOLUSI ================= -->
-<section id="solusi" class="section">
-  <h2>Solusi Era Society 5.0: Petualangan Interaktif</h2>
+        <div class="hero-buttons">
+          <a href="#akses" class="btn primary-btn">
+            Mulai Sekarang
+          </a>
 
-  <div class="grid-2">
-    <div>
-      <p>Aplikasi Jejak Hijrah mengganti menu konvensional dengan peta interaktif.</p>
-      <ul>
-        <li>Memvisualisasikan alur sejarah</li>
-        <li>Meningkatkan fokus belajar</li>
-        <li>Gamifikasi menarik</li>
-      </ul>
+          <a href="#fitur" class="btn secondary-btn">
+            Lihat Fitur
+          </a>
+        </div>
+      </div>
+
+      <!-- Kolom kanan -->
+      <div class="hero-image reveal">
+        <div class="image-wrapper">
+          <img
+            src="https://i.ibb.co.com/4nwXHkDb"
+            alt="FOTO HERO"
+            class="responsive-image"
+          />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       SECTION MASALAH
+  ========================== -->
+  <section class="section bg-light" id="masalah">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <h2>Mengapa Belajar Sejarah Terasa Membosankan?</h2>
+
+        <p>
+          Pembelajaran Sirah Nabawiyah di sekolah seringkali menghadapi
+          tantangan konvensional yang membuat siswa kurang bersemangat.
+        </p>
+      </div>
+
+      <!-- Card masalah -->
+      <div class="card-grid">
+
+        <div class="card reveal">
+          <h3>Metode Pasif</h3>
+          <p>
+            Metode pasif yang hanya mengandalkan hafalan
+            dari buku teks panjang.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Fokus Mudah Hilang</h3>
+          <p>
+            Siswa SMP rentan kehilangan fokus dan sulit mengingat
+            alur kronologis peristiwa secara utuh.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Minim Gamifikasi</h3>
+          <p>
+            Minimnya aplikasi edukasi yang ringan,
+            ber-gamifikasi, dan mendukung belajar mandiri.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="target reveal">
+        <strong>Target Pengguna:</strong>
+        Siswa SMP (usia 12-15 tahun) dan Guru PAI.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       SECTION SOLUSI
+  ========================== -->
+  <section class="section" id="solusi">
+    <div class="container solusi-layout">
+
+      <!-- Gambar solusi -->
+      <div class="solusi-image reveal">
+        <div class="image-wrapper">
+          <img
+            src="https://i.ibb.co.com/JRBYgvVS"
+            alt="Antarmuka Peta Perjalanan (Journey Map) Jejak Hijrah."
+            class="responsive-image"
+          />
+        </div>
+      </div>
+
+      <!-- Teks solusi -->
+      <div class="solusi-text reveal">
+
+        <div class="section-title left-align">
+          <h2>Solusi Era Society 5.0: Petualangan Interaktif</h2>
+        </div>
+
+        <p>
+          Aplikasi Jejak Hijrah mengganti list menu konvensional
+          dengan peta gurun interaktif, mengintegrasikan teks,
+          visual, dan audio secara proporsional.
+        </p>
+
+        <p>
+          Siswa menyusuri 7 titik lokasi secara berurutan.
+          Titik rute baru akan terbuka setelah materi,
+          kuis, atau game di bab sebelumnya diselesaikan.
+        </p>
+
+        <ul class="benefit-list">
+          <li>Memvisualisasikan alur kronologis sejarah dengan mudah</li>
+          <li>Meningkatkan retensi fokus melalui multimedia interaktif</li>
+          <li>Memacu motivasi belajar dengan sistem lencana</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       SECTION FITUR
+  ========================== -->
+  <section class="section bg-light" id="fitur">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <h2>Fitur Unggulan Jejak Hijrah</h2>
+
+        <p>
+          Dirancang khusus untuk sistem Android dengan performa ringan
+          (offline-first) tanpa teknologi berat seperti AR/VR.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-card reveal">
+          <h3>Navigasi Journey Map</h3>
+
+          <p>
+            Peta perjalanan vertikal dari Makkah ke Madinah
+            dengan indikator gembok level untuk alur sistematis.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <h3>Multimedia Lengkap</h3>
+
+          <p>
+            Dilengkapi Modul Infografis, video animasi moving map,
+            dan audio drama/podcast.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <h3>Kuis & Game Sederhana</h3>
+
+          <p>
+            Evaluasi dengan kuis ber-timer dan mini game
+            interaktif “Tebak Siluet Tokoh”.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <h3>Gamifikasi Lencana</h3>
+
+          <p>
+            Sistem penghargaan berupa Lencana “Ahli Sejarah”
+            untuk siswa yang sukses mencapai Madinah.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       SECTION AKSES PRODUK
+  ========================== -->
+  <section class="section access-section" id="akses">
+
+    <div class="container reveal">
+
+      <h2>Mulai Petualanganmu Sekarang!</h2>
+
+      <p>
+        Coba pengalaman belajar berbasis web atau unduh aplikasinya
+        ke smartphone Android kamu.
+      </p>
+
+      <div class="access-buttons">
+
+        <a href="belajar.html" class="btn primary-btn">
+          Mulai Belajar (Versi Web)
+        </a>
+
+        <a href="#" class="btn secondary-btn">
+          Unduh APK (Android)
+        </a>
+
+      </div>
+
     </div>
 
-    <div>
-      <img src="https://i.ibb.co.com/JRBYgvVS" alt="Antarmuka Peta Perjalanan" onerror="this.onerror=null;this.alt='Gambar belum ditambahkan';">
+  </section>
+
+  <!-- =========================
+       SECTION TIM
+  ========================== -->
+  <section class="section" id="tim">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <h2>Tim Pengembang: Sobat Qizama</h2>
+
+        <p>
+          Kelompok 2 Pengembangan Aplikasi Pembelajaran,
+          Prodi PAI UMY.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <!-- Anggota 1 -->
+        <div class="team-card reveal">
+          <img
+            src="https://i.ibb.co.com/QL77Nxt/M-A-Qisthi-Merah-4x6cm-2-jpg.jpg"
+            alt="Foto Abdillah"
+            class="team-photo"
+          />
+
+          <h3>Muhammad Abdillah Qisthi</h3>
+          <p>Project Manager & QC</p>
+        </div>
+
+        <!-- Anggota 2 -->
+        <div class="team-card reveal">
+          <img
+            src="https://i.ibb.co.com/dhyW2H6/Whats-App-Image-2026-04-20-at-07-59-50.jpg"
+            alt="Foto Rumizah"
+            class="team-photo"
+          />
+
+          <h3>Dwi Rumizah</h3>
+          <p>App Developer</p>
+        </div>
+
+        <!-- Anggota 3 -->
+        <div class="team-card reveal">
+          <img
+            src="https://i.ibb.co.com/Kp8957F5/Whats-App-Image-2026-04-20-at-07-59-21.jpg"
+            alt="Foto Aisy"
+            class="team-photo"
+          />
+
+          <h3>Rihadatul Aisy</h3>
+          <p>UI/UX Designer</p>
+        </div>
+
+        <!-- Anggota 4 -->
+        <div class="team-card reveal">
+          <img
+            src="https://i.ibb.co.com/20R2jYY0/Gambar-Whats-App-2025-04-14-pukul-13-04-50-4d27f2a4.jpg"
+            alt="Foto Rufaidah"
+            class="team-photo"
+          />
+
+          <h3>Rufaidah Al Athiyyah</h3>
+          <p>Content Expert</p>
+        </div>
+
+        <!-- Anggota 5 -->
+        <div class="team-card reveal">
+          <img
+            src="https://i.ibb.co.com/tTdypvxq/Whats-App-Image-2026-04-27-at-07-48-12.jpg"
+            alt="Foto Zeldi"
+            class="team-photo"
+          />
+
+          <h3>Muhammad Zeldi Riyanyah</h3>
+          <p>Instructional Designer</p>
+        </div>
+
+        <!-- Anggota 6 -->
+        <div class="team-card reveal">
+          <img
+            src="https://i.ibb.co.com/DDQ4G0Vj/IMG-1250.jpg"
+            alt="Foto Zalfa"
+            class="team-photo"
+          />
+
+          <h3>Zalfa Novita Ardenia</h3>
+          <p>Instructional Designer</p>
+        </div>
+
+      </div>
+
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= FITUR ================= -->
-<section id="fitur" class="section">
-  <h2>Fitur Unggulan Jejak Hijrah</h2>
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container">
 
-  <div class="card-container">
-    <div class="card">Navigasi Journey Map</div>
-    <div class="card">Multimedia Lengkap</div>
-    <div class="card">Kuis & Game</div>
-    <div class="card">Gamifikasi Lencana</div>
-  </div>
-</section>
+      <h3>Kelompok 2 - Sobat Qizama</h3>
 
-<!-- ================= AKSES ================= -->
-<section id="akses" class="section highlight">
-  <h2>Mulai Petualanganmu Sekarang!</h2>
-  <p>Coba versi web atau unduh aplikasi Android.</p>
+      <p>
+        Program Studi Pendidikan Agama Islam - UMY
+      </p>
 
-  <a href="belajar.html" class="btn">Mulai Belajar</a>
-  <a href="#" class="btn secondary">Unduh APK</a>
-</section>
+      <p>2026</p>
 
-<!-- ================= TIM ================= -->
-<section id="tim" class="section">
-  <h2>Tim Pengembang: Sobat Qizama</h2>
+      <p>
+        Membangun Peradaban Melalui Teknologi Pendidikan.
+      </p>
 
-  <div class="card-container">
-
-    <div class="team-card">
-      <img src="https://i.ibb.co.com/QL77Nxt/M-A-Qisthi-Merah-4x6cm-2-jpg.jpg" alt="Foto Abdillah">
-      <h4>Muhammad Abdillah</h4>
-      <p>Project Manager</p>
     </div>
+  </footer>
 
-    <div class="team-card">
-      <img src="https://i.ibb.co.com/dhyW2H6/Whats-App-Image-2026-04-20-at-07-59-50.jpg" alt="Foto Rumizah">
-      <h4>Dwi Rumizah</h4>
-      <p>Developer</p>
-    </div>
+  <!-- Menghubungkan file JavaScript -->
+  <script src="script.js"></script>
 
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-  <p>Kelompok 2 - Sobat Qizama | PAI UMY | 2026</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
